@@ -1,0 +1,184 @@
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="icon" href="images/icon.jpg">
+		<title>
+			Luc PAN
+		</title>
+	</head>
+	<body>
+		
+		<div id="accueil"></div>
+		<nav class="navbar">
+				<h1>Luc Pan</h1>
+				
+			<ul>
+				<li><a class="nav-link scrollto active" href="#accueil">Accueil</a></li>
+				<li><a class="nav-link scrollto active" href="#profil">Profil</a></li>
+				<li><a class="nav-link scrollto active" href="parcours.html">Parcours</a></li>
+				<li><a class="nav-link scrollto active" href="#projet">Mes projets</a></li>
+				<li><a class="nav-link scrollto active" href="#veille">Veille Technologique</a></li>
+				<a class="nav-link scrollto active" href="images/CV Luc PAN.pdf" target="_blank">
+				<li>Mon CV</li></a>
+				<li><a class="nav-link scrollto active" href="#contact">Contact&ensp;</a></li>
+				<li>
+				<div id="toggle">
+					<i class="indicator"></i>
+				</div>
+			
+				<script>	
+				const body = document.querySelector('body');
+				const toggle = document.getElementById('toggle');
+				const a = document.querySelectorAll('a');
+				toggle.onclick = function() {
+				toggle.classList.toggle('active');
+				body.classList.toggle('active');
+				body.classList.toggle('darkmod');
+				a.forEach(elem => elem.classList.toggle('darkmod'))
+				}
+				</script>
+				</li>
+			</ul>	
+		</nav>
+	
+
+		<center><h1>Salut, Je m'appelle Luc</h4>
+			<h2>Développeur web </h3></center>
+		
+
+		<section class="page-content">
+			<div class="length">
+				<header>
+					<img src="images/code.jpg" alt="Mon image">
+				</header>
+		</div>
+
+		
+		<div class="container" id="profil">
+			
+			
+			<h2> A PROPOS </h2>
+		
+			<p> Je suis un développeur web et je suis actuellement étudiant en deuxième année 
+				de BTS SIO. J’ai effectué 2 stages dans une entreprise nommée The Data Driven Company qui
+				ont développé leur site web Ellis-car pendant mon année de première année et 
+				deuxième année de Brevet Technicien Supérieur (BTS) Services informatiques aux 
+				Organisations (SIO) dans la spécialité 
+				de Solutions Logicielles et Applications Métier (SLAM). 
+			</p>
+		</div>
+			
+	
+
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<center> 	
+			<div id="projet"></div>
+			
+				
+					<div class="card">
+						<a href="https://www.gekkode.com/blog/post/#">
+							<!-- Image à la une -->
+							<div class="card-image"><img src="https://www.gekkode.com/wp-content/uploads/2021/08/orange.jpeg" alt="Orange" /></div>
+							<!-- Fin de l'image à la une -->
+					
+							<!-- Corp de notre carte -->
+							<div class="card-body">
+					
+								<!-- Titre de l'article -->
+								<div class="card-title">
+									<h3>SicilyLines</h3>
+								</div>
+								<!-- Extrait de l'article -->
+								<div class="card-excerpt">
+									<p> Un logiciel de réservation de traversés maritimes en ligne. Ce projet a été réalisé au cours de mes études</p>
+								</div>
+								<a href="https://www.ellis-car.fr/blog/" class="styled" target="_blank">Github</a>
+							</div>
+					</div>
+							<!-- Fin du corp de notre carte -->
+						</a>
+					</div>
+			
+
+
+
+				
+					<div class="card">
+						<a href="https://www.gekkode.com/blog/post/#">
+							<!-- Image à la une -->
+							<div class="card-image"><img src="images/blog.png" alt="Orange" /></div>
+							<!-- Fin de l'image à la une -->
+					
+							<!-- Corp de notre carte -->
+							<div class="card-body">
+					
+								<!-- Titre de l'article -->
+								<div class="card-title">
+									<h3>Ellis-car</h3>
+								</div>
+								<!-- Extrait de l'article -->
+								<div class="card-excerpt">
+									<p> Durant mon stage j'ai fortement contribuer à la création d'article et à la mise en page sur le site Ellis-car.</p>
+								</div>
+								<a href="https://www.ellis-car.fr/blog/" class="styled" target="_blank">Aller sur le site</a>
+							</div>
+							<!-- Fin du corp de notre carte -->
+						</a>
+					</div>
+				
+
+
+
+
+				
+					<div class="card">
+						<a href="https://www.gekkode.com/blog/post/#">
+							<!-- Image à la une -->
+							<div class="card-image"><img src="images/Bonbons.png" alt="Orange" /></div>
+							<!-- Fin de l'image à la une -->
+					
+							<!-- Corp de notre carte -->
+							<div class="card-body">
+								
+								<!-- Titre de l'article -->
+								<div class="card-title">
+									<h3>Projet Bonbons</h3>
+								</div>
+								<!-- Extrait de l'article -->
+								<div class="card-excerpt">
+									<p> Lors de mes études j'ai crée un site de bonbons en php qui permet de modifier, 
+										supprimer, ajouter un bonbon qui est relié à une base de données MySQL
+									</p>
+								</div>
+					
+							</div>
+							<!-- Fin du corp de notre carte -->
+						</a>
+				</div>
+			</div>
+		</center>
+	 
+		
+		
+		
+	
+
+	 
+	
+		<div class="contact" id="contact">
+		<h2>Me Contacter</h2>
+		
+		<p>Je suis disponible si vous avez des questions ou si vous voulez me contacter. Vous pouvez me contacter
+			sur l'adresse mail luc9902@hotmail.fr</p>
+			</div>	
+			
+	
+	</body>
+</html>	
