@@ -15,62 +15,119 @@
 			
 			<ul>
 				<li><a class="nav-link scrollto active" href="index.html">Accueil</a></li>
-				<li><a class="nav-link scrollto active" href="index.html">Profil</a></li>
-				
-				<li><a class="nav-link scrollto active" href="parcours.html">Mon Parcours</a></li>
-				
-				<li><a class="nav-link scrollto active" href="index.html">Mes projets</a></li>
-				<a class="nav-link scrollto active" href="images/CV Luc PAN.pdf" target="_blank">
-				<li>Mon CV</li></a>
-				<li>Contact</li>
-			</ul>
+				<li><a class="nav-link scrollto active" href="index.html#profil">Profil</a></li>
+                <li><a class="nav-link scrollto active" href="#veille">Veille Technologique</a></li>
+				<li><a class="nav-link scrollto active" href="index.html#projet">Mes projets</a></li>
+                <li><a class="nav-link scrollto active" href="index.html#contact">Contact&ensp;</a></li>
+                <li>
+                <div id="toggle">
+					<i class="indicator"></i>	
+				</div>
+                <script>	
+                    const body = document.querySelector('body');
+                    const toggle = document.getElementById('toggle');
+                    const a = document.querySelectorAll('a');
+                    toggle.onclick = function() {
+                    toggle.classList.toggle('active');
+                    body.classList.toggle('active');
+                    body.classList.toggle('darkmod');
+                    a.forEach(elem => elem.classList.toggle('darkmod'))
+                    }
+                    </script>
+                </li>
+            </ul>
 		</nav>
+        <div class="stairs"><img src="images/parcours1.jpg" alt="image escalier"></div>
+        
 
-      <div class="col-6 col-12-small">
+
+     <!-- <div class="col-6 col-12-small">
         <section class="box" id="parcours">
             <a href="d" class="image featured" target="_blank"><img src="" alt="" /></a>
           
                 <div class="wp-container-1 wp-block-column" style="flex-basis:66.66%">
-                    <p> Je m&rsquo;appelle Luc PAN. Je suis actuellement étudiant au <a href="https://www.lyceedecachan.fr/" 
-                        target="_blank" rel="lyceedecachan"> Lycée de Cachan </a>
+                    <p> 
+                    </p>Je suis actuellement étudiant au <a href="https://www.lyceedecachan.fr/" 
+                        target="_blank" rel="lyceedecachan"><span>Lycée polyvalent de Cachan</span></a>
                         à Cachan en deuxième année de (<strong>BTS SIO SLAM</strong>) 
                         dans la spécialité de Solutions Logicielles et Applications Métier (<strong>SLAM</strong>). 
                         
-                        Dès mon plus jeune âge j&rsquo;ai commencé à m'intéressé à la technologie. 
-                        Je me suis dirigé en BAC Science Technologique du Développement Durable (STI2D) spécialité 
-                        Système d&rsquo;Information Numérique (SIN) au <a href="http://www.diderot.org/" 
-                        target="_blank" rel="lyceediderot">Lycée Diderot</a> à Paris. 
-                        Au cours de ces années de Lycée, je me suis passionné pour l&rsquo;informatique mais plus 
-                        particulièrement pour le développement web, ce qui explique mon choix pour l&rsquo;option <strong>SLAM</strong>.
-                    </p>
+                        Depuis mon plus jeune âge, l&rsquo;ai développé un intérêt pour la technologie, 
+				        ce qui m'a amené à m'inscrire en BAC Science Technologique du Développement Durable 
+				        (STI2D) avec une spécialisation en Système d'Information Numérique (SIN) au 
+				        <a href="http://www.diderot.org/" 
+				        target="_blank" rel="lyceediderot"><span>Lycée polyvalent de Diderot</span></a> de Paris. 
+				        Tout au long de mes années de lycée, je me suis passionné 
+				        pour l&rsquo;informatique et plus particulièrement pour le développement web, ce qui explique 
+				        pourquoi l&rsquo;ai choisi l&rsquo;option <strong>SLAM</strong>.
                     </div>
-                </section>
+                </section>-->
+
+                <h3 class="exp"> Mes formations</h3>
+                <div class="formation-container">
+                    <div class="formation">
+                        <img src="images/lycee-diderot.png" alt="">
+                       
+                        <h3>Lycée polyvalent de diderot</h3>
+
+                        <p> Baccalauréat Technologique (STI2D spécialité SIN)</p>
+                        <p> 2019-2021 </p>
+                            <a href="http://www.diderot.org" class="button1" target="_blank">Consulter le site</a>
+                    </div>
+                    <div class="formation">
+                        <img src="images/lycee-cachan.png" alt="">
+                        <h3>Lycée polyvalent de cachan</h3>
+                        <p> BTS SIO (Services Informatiques au Organisations) SLAM</p>
+                        <p> 2021-2023 </p>
+                        <a href="https://www.lyceedecachan.fr" class="button2" target="_blank">Consulter le site</a>
+                    </div>
+                <!-- Fin du corp de notre carte -->
+            </a>
+                    </div>
+
+                <h3 class="exp"> Mes expériences professionelles</h3>
                 <div class="parcours-container">
                     <div class="parcours">
+                        <img src="images/logo ellis-car.png" alt="">
                         <h3>Développeur Web</h3>
-                        <p>Ellis-car, Paris<br/> </p>
-                        <p>30 mai - 1er juillet 2022 / Stage de première année de BTS Informatique</p>
+                        <h3>Ellis-car, Paris</h3>
+                        <p>30 mai - 1er juillet 2022 / Stage de première année </p>
                         <p>Développer une application web appelé Ellis-car avec une équipe de développeurs.
-                            Participation à la conception des outils et méthodes propres à l'environnement technique Web.
+                            Participation à la conception des outils et méthodes propres à l'environnement 
+                            technique Web.
                         </p>
-                        <p>Application réalisée avec l'aide de mon tuteur de stage en partant d'une application de test de fonctionnalités dont j'ai pu reprendre un bon nombre de code. Je n'avais aucune notion en React.js et Next.js arrivant au stage.</p>
-                        
-                        <p>Cette expérience a été très enrichissante et m'a apporté un très bon premier contact avec le monde professionnel de l'informatique et de l'entreprise.</p>
+                        <!--<p>Application réalisée avec l'aide de mon tuteur de stage en partant d'une application 
+                            de test de fonctionnalités dont j'ai pu reprendre un bon nombre de code. 
+                            Je n'avais aucune notion en React.js et Next.js arrivant au stage.</p>-->   
+                        <p>Langage utilisé : ReactJS / NextJS / Tailwinds css</p>
+                        <p>Ce stage a été très enrichissant et m'a apporté un très bon premier contact 
+                            avec le monde professionnel de l'informatique et de l'entreprise.</p>
+                            <a href="https://www.ellis-car.fr/blog/" class="button3" target="_blank">Consulter le site</a>
                     </div>
                     <div class="parcours">
+                        <img src="images/logo ellis-car.png" alt="">
                         <h3>Développeur Web</h3>
-                        <p>Ellis-car, Paris</p>
-                        <p>9 janvier - 24 février 2023 / Stage de deuxième année de BTS Informatique</p>
-                        <p> Continuation de l'application web Ellis-car en améliorant l'ergonomie du site web</p>
-                        <p>Réaliser des articles et modifier la mise en page du site web Ellis-car à l'aide de la plate-forme de site Web Elementor WordPress.</p>
-                        <p> Cette deuxième expérience m'a permis de consolider mes connaissances en React js et Next js</p>                                            
-                    <a href="https://www.ellis-car.fr/blog/" target="_blank">Aller sur le site</a>
-                </div>
+                        <h3>Ellis-car, Paris</h3>
+                        <p>9 janvier - 24 février 2023 / Stage de deuxième année </p>
+                        <p> Continuation de l'application web Ellis-car en améliorant l'ergonomie du site web
+                        Réaliser des articles et modifier la mise en page du site web Ellis-car à l'aide 
+                            de la plate-forme de site Web Elementor WordPress.</p>
+                        <p>Langage utilisé : ReactJS / NextJS / TypeScript / WordPress</p>
+                        <p>Cette expérience m'a permis de consolider mes connaissances en React js et Next js et 
+                            ce projet m'a donné l'occasion de découvrir le langage TypeScript 
+                            et le système de gestion de contenu WordPress.
+                        </p>                                            
+                        <a href="https://www.ellis-car.fr/blog/" class="button4" target="_blank">Consulter le site</a>
+                    </div>
                 <!-- Fin du corp de notre carte -->
             </a>
                     </div>
                   </div>
                                 
     </div>
+    <footer class="footer">
+		
+		<p class="mt-3">© Copyright 2023 - Luc PAN - Tous droits réservés.</p>
+	</footer>
 </body>
 </html>
