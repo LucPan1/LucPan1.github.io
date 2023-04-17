@@ -34,6 +34,8 @@ body {
 	background: rgba(0, 0, 0, 0.829);
 	transition: 0.5s;
 	color: #fff !important;
+	overflow-x: hidden;
+
 }
 
 /** Change background to black
@@ -61,17 +63,37 @@ body.active {
 
 .about-img img {
 	width: 35vw;
-	border-radius: 50%;
-	opacity: 42%;
-	transform: translateX(25px);
+	border-radius: 40%;
+	transform: translateX(80px);
 } 
 .about p {
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.about-content {
+	text-align: center;
+	line-height: 1.2;
+}
+
+.about-content h3 {
+	 font-size: 2.5rem;
+}
+
+
+
+.about-content p {
+	font-size: 1.3rem;
+	margin: 2rem 0 3rem;
+	text-align: center;
+	width: 70%;
+	transform: translateX(150px);
+}
+
 .heading {
 	text-align: center;
 	font-size: 2.5rem;
 	font-weight: 500;
+	transform: translate(30px, 0);
 
 }
 
@@ -92,19 +114,7 @@ body.active {
 	line-height: 100px;
 }
  
-.about-content {
-	text-align: center;
-	line-height: 1.2;
-}
 
-.about-content h3 {
-	 font-size: 2.6rem;
-}
-
-.about-content p {
-	font-size: 1.3rem;
-	margin: 2rem 0 3rem
-}
 /*.about p {
 
 	margin-top: 50px;
@@ -351,6 +361,7 @@ nav ul li {
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 256px;
+	gap: 2rem;
 }
 
 span {
@@ -391,6 +402,7 @@ span {
 	color: var(--main-color);
 	margin: 2rem 1.5rem 2rem 0;
 	transition: .5s ease;
+	transform: translateX(5px);
 	/*margin-bottom: 25px;*/
 
 }
@@ -414,7 +426,7 @@ span {
 	float: right;
 	position: relative;
   	transform: translateY(-165%);
-  	right: 15%;
+  	right: 40%;
 }
 
 .button1 {
@@ -501,6 +513,76 @@ span {
 	height: 350px;
 	opacity: 40%;
 }
+
+
+.veille h1 {
+	text-align: center;
+	color: var(--main-color);
+}
+
+.veille p {
+	text-align: center;
+	width: 70%;
+	transform: translateX(200px);
+
+}
+
+.veille img {
+	transform: translateX(230px);
+	width: 65%;
+	height: 450px;
+
+}
+.veille h2 {
+	text-align: center;
+}
+
+.card-veille {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+	width: 300px;
+	display: inline-block;
+	width: 32%;
+	height: 900px;
+  }
+  
+  .card-image-veille {
+	width: 75%;
+	height: 200px;
+	object-fit: cover;
+  }
+  
+  .card-content-veille {
+	padding: 10px;
+  }
+  
+  .card-title-veille {
+	margin: 0;
+  }
+  
+  .card-text-veille {
+	margin: 10px 0;
+  }
+  
+  .card-link-veille {
+	display: block;
+	text-align: center;
+	padding: 5px 0;
+	background-color: #f1f1f1;
+	color: #333;
+	text-decoration: none;
+	border-top: 1px solid #ccc;
+	transition: background-color 0.3s ease;
+  }
+  
+  .card-link-veille:hover {
+	background-color: #333;
+	color: #fff;
+  }
+
+  
+  
 /*.contact  {
 	transform: translateY(100%);
 }

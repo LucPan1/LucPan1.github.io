@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.jpg">
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Veille Technologique</title>
+</head>
+<body>
+    <div id="accueil"></div>
+		<nav class="navbar">
+				<h1>Luc Pan</h1>
+				
+			<ul>
+				<li><a class="nav-link scrollto active" href="index.html">Accueil</a></li>
+				<li><a class="nav-link scrollto active" href="index.html#profil">Profil</a></li>
+				<li><a class="nav-link scrollto active" href="parcours.html">Parcours</a></li>
+				<li><a class="nav-link scrollto active" href="index.html#projet">Mes projets</a></li>
+                <li><a class="nav-link scrollto active" href="index.html#contact">Contact&ensp;</a></li>
+				<li>
+				<div id="toggle">
+					<i class="indicator"></i>	
+				</div>
+			
+				<script>	
+				const body = document.querySelector('body');
+				const toggle = document.getElementById('toggle');
+				const a = document.querySelectorAll('a');
+				toggle.onclick = function() {
+				toggle.classList.toggle('active');
+				body.classList.toggle('active');
+				body.classList.toggle('darkmod');
+				a.forEach(elem => elem.classList.toggle('darkmod'))
+				}
+				</script>
+				</li>
+			</ul>	
+		</nav>
+		
+        <div class="veille">
+
+			
+			<img src="images/veille_techno.png">
+			<h2>Qu'est ce que la veille technologique ?</h2>
+			<p> La veille technologique, élément de la veille stratégique, 
+				consiste à surveiller les évolutions techniques, les innovations dans un secteur 
+				d’activité donnée. La veille technologique comprend notamment la surveillance, 
+				la collecte, le partage et la diffusion d’information permettant d’anticiper ou de 
+				s’informer sur des changements en matière de recherche, développement, brevet, lancement 
+				de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc…. 
+				Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.
+
+			</p>
+			<h1>Les principaux outils de ma veille</h1>
+
+			<p>
+				Grâce à des newsletters telles que Alertes Talkwalker et Google Alert qui me tiennent au courant 
+				de l'actualité que je souhaite en tapant des mots clés. Les réseaux sociaux telles que twitter,
+				facebook, instagram, et les médias sont aussi des outils de veilles technologique qui pourront 
+				permettre de s'informer sur les dernières veilles technologiques.
+			</p>
+
+			<h1>Sujet de ma veille</h1>
+
+			<p> Dans le cadre de mon sujet pour la veille technologique, j'ai choisi d'explorer le thème 
+				 des langages de programmation.</p>
+
+				<h2> Qu'est ce que React js ?</h2>
+
+				<p>React est une bibliothèque JavaScript libre développée par Facebook depuis 2013. 
+					Le but principal de cette bibliothèque est de faciliter la création d'application 
+					web monopage, via la création de composants dépendant d'un état et générant une page 
+					HTML à chaque changement d'état</p>
+
+				<h2> Qu'est ce que Angular ?</h2>	
+				<p>Angular est un framework pour clients, open source, basé sur TypeScript et codirigé 
+					par l'équipe du projet « Angular » chez Google ainsi que par une communauté de 
+					particuliers et de sociétés. Angular est une réécriture complète d'AngularJS, 
+					cadriciel construit par la même équipe</p>
+					
+					<h2> AngularJS officiellement arrivé en fin de vie (21 janvier 2022)</h2>	
+
+					<p> AngularJS est toujours largement utilisé aujourd'hui. Cela peut s'expliquer par le 
+						fait que la mise à niveau d'AngularJS vers son successeur, Angular, n'est pas une 
+						tâche facile, puisque Google l'a complètement repensé en passant de la version 1 
+						à la version 2. Les différences entre les deux frameworks ne sont pas mineures, 
+						à commencer par le langage qu'ils doivent adopter —JavaScript pour AngularJS, 
+						TypeScript pour Angular— jusqu'à l'architecture globale, avec AngularJS suivant 
+						le paradigme MVC, le support mobile, etc.</p>
+			<center><a href="https://www.infoq.com/fr/news/2022/01/angularjs-lts-end/" class="" target="_blank">Lire l'article</a></center>
+        </div>
+
+		<center>
+		<div class="card-veille">
+			<img src="images/logo-angular-js.png" alt="Illustration" class="card-image-veille">
+			<div class="card-content-veille">
+			  <h2 class="card-title-veille">L'intérêt pour React, Angular 
+				et Vue diminue (13 Janvier 2023)</h2>
+			  <p class="card-text-veille">Selon le rapport State of JavaScript 2022. La dernière édition publiée 
+				 ce 10 janvier, est basée sur une enquête menée auprès de 39 472 développeurs à la fin 
+				 de l'année dernière. Pour les frameworks front-end, ceux de rendu et les autres outils, 
+				 l'enquête a tenté de mesurer la rétention (réutilisation), l'intérêt (envie d'apprendre),
+				  l'utilisation et la notoriété. Parmi ses observations, on note un intérêt élevé des 
+				  personnes sondées pour les frameworks frontaux orientés performance que sont Svelte (70 %),
+				   Solid (66 %) et Qwik (67 %) même s’ils ne sont, en pratique, que très peu utilisés.
+				</p>
+				<p>A contrario, les développeurs portent un intérêt moindre pour les leaders de longue date 
+					que sont Vue et Angular. L'intérêt pour l'apprentissage d'Angular a en effet chuté 
+					ces dernières années, passant ainsi de 50 % en 2016 à seulement 20 % dans le rapport actuel,
+					 tandis que l'intérêt pour Vue, en hausse de 2016 à 2018, 
+					 il a ensuite glissé de 70 % en 2018 à 51 % en 2022. Le framework React de JavaScript voit quant à lui sa 
+					  côte baisser de 68 % à 47 % ces quatre dernières années. </p>
+			  <a href="https://www.lemondeinformatique.fr/actualites/lire-rapport-javascript-2022-l-interet-pour-react-angular-et-vue-diminue-89200.html" class="card-link-veille" target="_blank">Lire l'article</a>
+			</div>
+		  </div>
+		<div class="card-veille">
+			<img src="images/logo-react-js.png" alt="Illustration" class="card-image-veille">
+			<div class="card-content-veille">
+			  <h2 class="card-title-veille">Pourquoi de plus en personnes choisissent de coder en React js ?</h2>
+			  <p class="card-text-veille">React ou React JS est une bibliothèque front-end 
+				de JavaScript développé par facebook qui vous permet de créer une interface graphique 
+				basée sur HTML. Il facilite la tâche en fournissant une architecture basée 
+				sur des composants qui n'était auparavant disponible que pour des langages 
+				tels que Java et C#.
+			</p>
+				<p>Grâce à cette fonctionnalité impressionnante, React devient rapidement 
+				la bibliothèque JavaScript standard pour le développement de front-end. 
+				C'est la raison pour laquelle de nombreux programmeurs et développeurs 
+				apprennent React ou React JS. </p>
+			  <a href="https://medium.com/hackernoon/10-react-js-articles-every-web-developer-should-read-f5b745a348dc" class="card-link-veille" target="_blank">Lire l'article</a>
+			</div>
+		  </div>
+		  <div class="card-veille">
+			<img src="images/logo-typescript.png" alt="Illustration" class="card-image-veille">
+			<div class="card-content-veille">
+			  <h2 class="card-title-veille">Pourquoi utiliser TypeScript plutôt que JavaScript ? (22 février 2021)</h2>
+			  <p class="card-text-veille">TypeScript est un langage open-source pris en charge par Microsoft,
+				 qui s’appuie sur JavaScript en ajoutant une fonction de type statique facultative. 
+				 Les types fournissent un moyen de structurer et de valider son code avant de l’exécuter. 
+
+				</p>
+				<p>La complexité de la base de code d’un projet JavaScript a tendance à croître de manière 
+				exponentielle à chaque nouvelle ligne de code, ce qui le rend extrêmement difficile à 
+				maintenir. La popularité croissante de JavaScript sur le serveur a aggravé les choses, 
+				car le backend est généralement beaucoup plus compliqué que le frontend. C’est alors que 
+				Microsoft a créé TypeScript pour résoudre ce problème. </p>
+			  <a href="https://mobiskill.fr/blog/conseils-emploi-tech/pourquoi-utiliser-typescript-plutot-que-javascript/" class="card-link-veille" target="_blank">Lire l'article</a>
+			</div>
+		  </div>
+		</center>
+</body>
+</html>
